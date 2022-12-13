@@ -4,10 +4,10 @@
 // //Sam Harris => S.H
 // //patrick feeney => P.F
 
-// function abbrevName(name){
+function abbrevName(name){
 
-//     //ATTEMPT 3 - Kata Solution
-//     // return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+    // ATTEMPT 3 - Kata Solution
+    return name.split(' ').map(i => i[0].toUpperCase()).join('.')
 
 //     //ATTEMPT 2
 //     var letter = /[a-zA-Z]/;
@@ -38,5 +38,5 @@
 // }
 
 // // abbrevName('Sophie Kneeshaw')
-
-// module.exports = abbrevName;
+};
+module.exports = abbrevName;
