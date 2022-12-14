@@ -4,12 +4,9 @@
 
 
 function descendingOrder(n){
-  const myFunc = num => Number(num)
-  const intArr = Array.from(String(n), myFunc)
-  // use the above to lines from the internet, but not fully sure how they work. 
-  
-  const highToLow = intArr.sort().reverse().join('')
-  const result = parseInt(highToLow)
+
+  const intArr = Array.from(String(n)).sort().reverse().join('')
+  const result = parseInt(intArr)
     return result
   }
 
