@@ -9,6 +9,9 @@ it.each`
     ${"isogram"}         |   ${true}
     ${"Dermatoglyphics"} |   ${true}
     ${""}                |   ${true}
+    ${'@b@'}             |   ${'error'}
+    ${121}                  |${'error'}
+
 
 
 
