@@ -4,15 +4,11 @@
 
 
 function descendingOrder(n){
-
-  const specialChars = /[ a-zA-Z`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-  const check = specialChars.test(n) ? true: false
-  const checkNumber = Number.isInteger(n) ? true : false 
-
+  const checkNumber = Number.isInteger(n)
   const intArr = Array.from(String(n)).sort().reverse().join('')
   const result = parseInt(intArr)
- 
-  return (n === null || check === true || checkNumber === false ? null : result )
+
+  return (checkNumber ? result : null )
   
 }
   module.exports = descendingOrder
