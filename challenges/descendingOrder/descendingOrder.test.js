@@ -1,17 +1,15 @@
 const descendingOrder = require ('./descendingOrder')
 
-test ( '' , () => {
-    const result = descendingOrder(0)
-    expect(result).toBe(0)
-
-    const result2 = descendingOrder(1)
-    expect(result2).toBe(1)
-
-    const result3 = descendingOrder(15)
-    expect(result3).toBe(51)
-
-    const result4 = descendingOrder(123456789)
-    expect(result4).toBe(987654321)
-
-
-})
+    it.each`
+      value           |   expected
+      ${40728}        |   ${87420}
+      ${15}           |   ${51}
+      ${123456789}    |   ${987654321}
+      ${0}            |   ${0}
+      ${'@!'}         |   ${null}
+      ${null}         |   ${null}
+  
+  `('should return $expected when given the integers $value', ({ expected, value }) => {
+      const result = descendingOrder(value);
+      expect(result).toBe(expected);
+    });

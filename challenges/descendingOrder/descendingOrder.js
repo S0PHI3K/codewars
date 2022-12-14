@@ -2,13 +2,13 @@
 // and return it with its digits in descending order. Essentially, rearrange the digits
 // to create the highest possible number.
 
-//Examples:
-//Input: 42145 Output: 54421
-//Input: 145263 Output: 654321
-//Input: 123456789 Output: 987654321
 
 function descendingOrder(n){
+  const checkNumber = Number.isInteger(n)
+  const intArr = Array.from(String(n)).sort().reverse().join('')
+  const result = parseInt(intArr)
 
-  }
-
+  return (checkNumber ? result : null )
+  
+}
   module.exports = descendingOrder
