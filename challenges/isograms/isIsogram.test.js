@@ -4,7 +4,8 @@ it.each`
     value                |   expected
     ${"isIsogram"}       |   ${false}
     ${"moOse"}           |   ${false}
-    ${"aba"}             |   ${false}
+    ${"LOose"}           |   ${false}
+    ${"abA"}             |   ${false}
     ${"isogram"}         |   ${true}
     ${"Dermatoglyphics"} |   ${true}
     ${""}                |   ${true}
