@@ -6,7 +6,7 @@ const descendingOrder = require ('./descendingOrder')
       ${15}           |   ${51}
       ${123456789}    |   ${987654321}
       ${0}            |   ${0}
-      ${@!}            |   ${null}
+      ${'@!'}         |   ${null}
       ${null}         |   ${null}
   
   `('should return $expected when given the integers $value', ({ expected, value }) => {
