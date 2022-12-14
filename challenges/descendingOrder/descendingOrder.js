@@ -8,6 +8,12 @@
 //Input: 123456789 Output: 987654321
 
 function descendingOrder(n){
+  let order = []
+  //for loop to iterate through the numbers
+  //num 1 = (n[0])
+  //num 2 = (n[1])
+  //if num 1 is higher than num 2, move it up the index or push it into the array, else push 2 into the array?
+  //then return the array.join('')
 
   }
 
