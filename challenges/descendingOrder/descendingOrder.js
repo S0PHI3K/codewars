@@ -8,11 +8,9 @@ function descendingOrder(n){
   const intArr = Array.from(String(n), myFunc)
   // use the above to lines from the internet, but not fully sure how they work. 
   
-  const highToLow = intArr.sort().reverse()
-  const output = highToLow.join('')
-  const result = parseInt(output)
-  return result
-
+  const highToLow = intArr.sort().reverse().join('')
+  const result = parseInt(highToLow)
+    return result
   }
 
   module.exports = descendingOrder
