@@ -5,9 +5,15 @@
 
 function descendingOrder(n){
 
+  const specialChars = /[ a-zA-Z`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+
   const intArr = Array.from(String(n)).sort().reverse().join('')
   const result = parseInt(intArr)
-    return result
+  // how do you get it to look through containing specialChars?
+    if (n === null || n === specialChars) {
+      return null
+    } else {
+    return result }
   }
 
   module.exports = descendingOrder
