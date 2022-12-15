@@ -10,6 +10,6 @@ it.each`
 
 `('should return $expected when given the array of $value', ({ expected, value }) => {
     const result = minMax(value);
-    expect(result).toBe(expected);
+    expect(result).toStrictEqual(expected);
   });
 

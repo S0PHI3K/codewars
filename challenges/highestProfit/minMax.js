@@ -4,8 +4,11 @@
 //Task
 //Write a function that returns both the minimum and maximum number of the given list/array.
 
+
 function minMax(arr){
-    return [0,0]; // fix me!
+    minValue = Math.min(...arr);
+    maxValue = Math.max(...arr);
+    return [minValue, maxValue]
   }
 
   module.exports = minMax;
