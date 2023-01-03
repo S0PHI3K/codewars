@@ -6,9 +6,24 @@
 
 
 function minMax(arr){
+
     minValue = Math.min(...arr);
-    maxValue = Math.max(...arr);
-    return [minValue, maxValue]
-  }
+    maxValue = Math.max(...arr); 
+    
+    const result = [minValue, maxValue]
+
+    let numberCheck = arr.every(element => {
+      return typeof element === 'number';
+    })
+
+    return (numberCheck ? result : 'error')
+
+    //ATTEMPT 1 - passes without considering boundary inputs
+  //   minValue = Math.min(...arr)
+  // maxValue = Math.max(...arr)
+  // return [minValue,maxValue]; 
+
+  };
 
   module.exports = minMax;
+
