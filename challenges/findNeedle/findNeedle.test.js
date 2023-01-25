@@ -9,5 +9,5 @@ it.each`
  
 `('should return $expected when given the array of $value', ({ expected, value }) => {
     const result = findNeedle(value);
-    expect(result).assertEquals(expected);
+    expect(result).toBe(expected);
   });

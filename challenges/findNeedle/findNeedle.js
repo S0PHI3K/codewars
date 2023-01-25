@@ -9,11 +9,12 @@ function findNeedle(haystack) {
   
     for(let i = 0; i < haystack.length; i++){
       if (haystack[i] === "needle"){
-        return "found the needle at position " + i;
+        "found the needle at position " + i
       } else {
-        return "Your function didn't return anything"
+        "Your function didn't return anything."
       }
     }
   }
 
+findNeedle
 module.exports = findNeedle
