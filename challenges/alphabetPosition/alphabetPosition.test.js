@@ -1,0 +1,1 @@
+const alphabetPosition = require ('./alphabetPosition')
